@@ -39,11 +39,11 @@ body {
 }
 
 #background_layer-design {
-    background-image: url(/assets/img/desk.jpg);
+    background-image: url(../assets/img/desk.jpg);
 }
 
 #background_layer-pr {
-    background-image: url(/assets/img/desk2.jpg);
+    background-image: url(../assets/img/desk2.jpg);
 }
 
 .header-main {
