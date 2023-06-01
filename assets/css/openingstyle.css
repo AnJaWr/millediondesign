@@ -39,11 +39,11 @@ body {
 }
 
 #background_layer-design {
-    background-image: url(https://github.com/AnJaWr/millediondesign/blob/e7009c062078a40dd120eddf132eaffa8a725405/assets/img/desk.jpg);
+    background-image: url(assets/img/desk.jpg);
 }
 
 #background_layer-pr {
-    background-image: url(https://github.com/AnJaWr/millediondesign/blob/e7009c062078a40dd120eddf132eaffa8a725405/assets/img/desk2.jpg);
+    background-image: url(assets/img/desk2.jpg);
 }
 
 .header-main {
