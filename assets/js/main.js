@@ -42,22 +42,11 @@ $(document).ready(function() {
         },
     };
 
-    $('.navmobile').hide();
-    $('.info_owner-mobile').hide();
-
-    // mobile function
-    if (isMobile.any()) {
-        $('.navmobile').show();
-        $('.info_owner-mobile').show();
-        $('.info_owner').hide();
-        console.log('this is mobile');
-        $('#m_circle_main').hide();
-    }
 });
-var button_design = document.getElementById('hoverButton-design');
-var button_pr = document.getElementById('hoverButton-pr');
-var div_design = document.getElementById('background_layer-design');
-var div_pr = document.getElementById('background_layer-pr');
+var button_design = document.getElementById('wrapper_main__button--design');
+var button_pr = document.getElementById('wrapper_main__button--pr');
+var div_design = document.getElementById('background_layer--design');
+var div_pr = document.getElementById('background_layer--pr');
 var divMain = document.getElementById('particles-js');
 
 button_design.addEventListener('mouseover', switchToDesign);
