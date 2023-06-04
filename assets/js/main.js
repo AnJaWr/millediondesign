@@ -48,21 +48,31 @@ var button_pr = document.getElementById('wrapper_main__button--pr');
 var div_design = document.getElementById('background_layer--design');
 var div_pr = document.getElementById('background_layer--pr');
 var divMain = document.getElementById('particles-js');
+var mySVG_design = document.getElementById('wrapper_mian__arrow_icon')
+
+var wrapper = document.getElementById('wrapper--one')
+
 
 button_design.addEventListener('mouseover', switchToDesign);
 button_pr.addEventListener('mouseover', switchToPr);
 button_design.addEventListener('mouseout', switchToDivMain);
 button_pr.addEventListener('mouseout', switchToDivMain);
 
+
 function switchToDesign() {
     // divMain.classList.add('hidden');
     divMain.setAttribute("hidden", "hidden");
     div_design.classList.add('visible');
+    mySVG_design.classList.remove("hidden");
+    wrapper.classList.remove('undisplay');
+
+
 }
 
 function switchToPr() {
     divMain.setAttribute("hidden", "hidden");
     div_pr.classList.add('visible');
+
 }
 
 function switchToDivMain() {
@@ -70,4 +80,18 @@ function switchToDivMain() {
     divMain.removeAttribute("hidden")
     div_design.classList.remove('visible');
     div_pr.classList.remove('visible');
+    mySVG_design.classList.add("hidden");
+}
+
+
+window.addEventListener('scroll', disableElementOnTop);
+
+function disableElementOnTop() {
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+    if (scrollTop === 0) {
+
+        wrapper.classList.add('undisplay');
+
+    }
 }
