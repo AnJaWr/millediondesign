@@ -84,14 +84,36 @@ function switchToDivMain() {
 }
 
 
-window.addEventListener('scroll', disableElementOnTop);
+// window.addEventListener('scroll', disableElementOnTop);
 
-function disableElementOnTop() {
+// function disableElementOnTop() {
+//     var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+//     if (scrollTop === 0) {
+
+//         wrapper.classList.add('undisplay');
+
+//     }
+// }
+
+window.addEventListener('scroll', function() {
+
+
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
 
     if (scrollTop === 0) {
 
         wrapper.classList.add('undisplay');
+    }
+
+
+    var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    var triggerPosition = (2 / 3) * window.innerHeight;
+
+    if (scrollPosition >= triggerPosition) {
+        document.querySelector('.collapsed-menu').classList.add('active');
+    } else {
+        document.querySelector('.collapsed-menu').classList.remove('active');
 
     }
-}
+});

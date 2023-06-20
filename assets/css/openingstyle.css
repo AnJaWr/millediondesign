@@ -93,6 +93,41 @@ body {
     transition: 0.5s;
 }
 
+.wrapper_main__button-item-list {
+    list-style: none;
+    padding: 0;
+}
+
+.wrapper_main__button-item {
+    margin-bottom: 0.8em;
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.5;
+    color: rgb(158, 158, 158);
+    transition: .12s;
+}
+
+.wrapper_main__button-item:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(119, 119, 119);
+    transition: .12s;
+}
+
+.wrapper_main__button-item:hover:before {
+    background-color: rgb(59, 1, 61);
+}
+
+.wrapper_main__button-item:hover {
+    color: rgb(114, 21, 161)
+}
+
 .wrapper_main__button:hover {
     background: #fff;
     box-shadow: 30px 10px 10px rgba(182, 182, 182, 0.486);
@@ -204,7 +239,8 @@ body {
     font-size: 24px;
     font-weight: bold;
     margin-left: 0.5em;
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     margin-bottom: 0.5em;
     bottom: 0;
 }
@@ -246,10 +282,14 @@ body {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .wrapper--one {
-    background-image: url(/assets/img/1000_F_601694576_z0f0VIJ92niEzLWCmLa6qBBzDRko2mn6.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/assets/img/sew.jpg);
+    /* background-image: url(https://raw.githubusercontent.com/AnJaWr/millediondesign/main/assets/img/sew.jpg); */
 }
 
 .wrapper--two {

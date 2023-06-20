@@ -1,0 +1,138 @@
+    /* sticky nav*/
+    
+    .collapsed-menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 15%;
+        max-height: 80vh;
+        background-color: #f1f1f162;
+        transition: top 0.3s ease-in-out;
+        padding-left: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .collapsed-menu.active {
+        top: 0;
+    }
+    
+    .toggle-btn {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: rgb(67, 22, 77);
+        color: white;
+        font-family: megrim;
+        font-size: 2em;
+        border: none;
+        outline: none;
+        margin: 10px;
+    }
+    /* .nav-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-list li {
+    position: relative;
+    
+}
+
+.nav-list li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    bottom: 0;
+    width: 2px;
+    background-color: #333;
+}
+
+.line_circle {
+    display: inline;
+    border-radius: 25%;
+    background-color: purple;
+    margin-right: -10px;
+    position: relative;
+} */
+    
+    .nav-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    
+    .nav-list:before {
+        /* linia */
+        content: "";
+        display: inline-block;
+        width: 2px;
+        background: rgba(179, 179, 179, 0.322);
+        position: absolute;
+        left: 4px;
+        top: 5px;
+        height: calc(100% - 10px);
+    }
+    
+    .nav-list__item--first {
+        margin-top: 7vh
+    }
+    
+    .nav-list__item {
+        position: relative;
+        padding-left: 15px;
+        margin-bottom: 35px;
+        text-decoration: none;
+        transition: .12s;
+        /* tu */
+    }
+    
+    .nav-list__item:before {
+        /* kólko */
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: rgb(134, 134, 134);
+        position: absolute;
+        left: 0;
+        top: 10px;
+        border-radius: 10px;
+        margin-bottom: 0;
+        transition: 1s;
+    }
+    
+    .nav-list__item:before:hover {
+        background: rgb(67, 22, 77);
+        transform: scale(2);
+        text-shadow: 0 0 4px;
+    }
+    
+    .nav-list__link {
+        text-decoration: none;
+        font-size: 1.7rem;
+        color: rgb(67, 22, 77);
+        top: 0;
+        left: 0;
+        text-align: center;
+        opacity: .5;
+        line-height: .75;
+        transition: .3s;
+    }
+    
+    .nav-list__link:hover {
+        color: rgb(37, 4, 44);
+        opacity: 1;
+        font-weight: 350;
+    }
+    
+    .nav-list__item--pause {
+        margin-top: 12vh;
+    }
