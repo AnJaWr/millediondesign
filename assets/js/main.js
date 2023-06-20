@@ -108,7 +108,7 @@ window.addEventListener('scroll', function() {
 
 
     var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-    var triggerPosition = (2 / 3) * window.innerHeight;
+    var triggerPosition = (4 / 5) * window.innerHeight;
 
     if (scrollPosition >= triggerPosition) {
         document.querySelector('.collapsed-menu').classList.add('active');

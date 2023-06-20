@@ -75,11 +75,12 @@ body {
 
 .wrapper_main__button {
     width: 20vw;
-    height: 25vh;
+    min-height: 25vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     z-index: 100;
+    padding: 20px;
 }
 
 .wrapper_main__button--design {
