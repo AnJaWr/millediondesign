@@ -95,7 +95,7 @@ body {
 .wrapper_main__button--design {
     margin-right: 100px;
     background-image: url(https://raw.githubusercontent.com/AnJaWr/millediondesign/main/assets/img/design.png);
-    background-image: url(/assets/img/design.png);
+    /* background-image: url(/assets/img/design.png); */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
