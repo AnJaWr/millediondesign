@@ -74,40 +74,50 @@ body {
 }
 
 .wrapper_main__button {
-    width: 20vw;
-    min-height: 25vh;
+    width: 40vw;
+    min-height: 30vh;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
     z-index: 100;
     padding: 20px;
 }
 
+.wrapper_main__button {
+    /* background: #f1f1f1; */
+    cursor: pointer;
+    /* box-shadow: 10px 5px 5px rgb(122, 122, 122); */
+    transition: 0.5s;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 .wrapper_main__button--design {
     margin-right: 100px;
+    background-image: url(https://raw.githubusercontent.com/AnJaWr/millediondesign/main/assets/img/design.png);
+    background-image: url(/assets/img/design.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.wrapper_main__button {
-    background: #f1f1f1;
-    cursor: pointer;
-    box-shadow: 10px 5px 5px rgb(122, 122, 122);
-    transition: 0.5s;
-}
 
-.wrapper_main__button-item-list {
+/* .wrapper_main__button-item-list {
     list-style: none;
     padding: 0;
-}
+} */
 
 .wrapper_main__button-item {
     margin-bottom: 0.8em;
     position: relative;
     padding-left: 20px;
     line-height: 1.5;
-    color: rgb(158, 158, 158);
+    color: rgba(158, 158, 158, 0);
     transition: .12s;
 }
 
+
+/* 
 .wrapper_main__button-item:before {
     content: '';
     position: absolute;
@@ -119,8 +129,10 @@ body {
     border-radius: 50%;
     background-color: rgb(119, 119, 119);
     transition: .12s;
-}
+} */
 
+
+/* 
 .wrapper_main__button-item:hover:before {
     background-color: rgb(59, 1, 61);
 }
@@ -129,17 +141,22 @@ body {
     color: rgb(114, 21, 161)
 }
 
-.wrapper_main__button:hover {
-    background: #fff;
-    box-shadow: 30px 10px 10px rgba(182, 182, 182, 0.486);
-}
+*/
 
 .wrapper_main__button--design:hover {
-    transform: scale(1.2) translate(-20%, -10%);
+    transform: scale(1.2) translate(0%, -10%);
 }
 
+
+/*
 .wrapper_main__button--pr:hover {
     transform: scale(1.2) translate(20%, -10%);
+} */
+
+.wrapper_man__arrow_icon {
+    display: flex;
+    align-self: flex-end;
+    justify-self: center;
 }
 
 .visible {

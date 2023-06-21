@@ -48,7 +48,7 @@ var button_pr = document.getElementById('wrapper_main__button--pr');
 var div_design = document.getElementById('background_layer--design');
 var div_pr = document.getElementById('background_layer--pr');
 var divMain = document.getElementById('particles-js');
-var mySVG_design = document.getElementById('wrapper_mian__arrow_icon')
+var mySVG_design = document.getElementById('wrapper_main__arrow_icon')
 
 var wrapper = document.getElementById('wrapper--one')
 
